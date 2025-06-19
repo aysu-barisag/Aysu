@@ -2,33 +2,29 @@
 <html lang="az">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aysu Barışağ</title>
   <style>
     body {
       font-family: sans-serif;
       text-align: center;
-      padding: 20px;
+      padding: 50px;
       background-color: #f0f0f0;
       transition: background-color 0.5s;
     }
     h1 {
       margin-bottom: 30px;
-      font-size: 100vw;
-      word-wrap: break-word;
+      font-size: 100px;
     }
     .buttons {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
+      gap: 20px;
       margin-bottom: 30px;
+      font-size: 20px;
     }
     button {
-      flex: 1 1 120px;
       padding: 15px 30px;
-      font-size: 5vw;
-      max-width: 200px;
+      font-size: 16px;
       cursor: pointer;
       border: none;
       border-radius: 10px;
@@ -43,9 +39,7 @@
       color: white;
     }
     img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
+      width: 300px;
       border-radius: 15px;
     }
   </style>
@@ -93,7 +87,7 @@
       index = (index + 1) % sozler.length;
       rightButton.innerText = sozler[index];
 
-      leftFontSize += 120;
+      leftFontSize += 100;
       leftButton.style.fontSize = leftFontSize + "px";
       if(index == 4){
         rightButton.style.display="none";
