@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Yeni Səhifə</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #e0e0e0;
+    }
+    h1 {
+      font-size: 70px;
+      color: #333;
+    }
+  </style>
+  <script>
+    function getRandomColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+setInterval(() => {
+  const h1s = document.querySelectorAll('h1');
+  h1s.forEach(h1 => {
+    h1.style.color = getRandomColor();
+    document.body.style.backgroundColor = getRandomColor();
+  });
+}, 300);
+  </script>
+
+
+</head>
+<body>
+  <h1>Düzgün qərar verəcəyini bilirdim ürəyimm</h1>
+</body>
+</html>
